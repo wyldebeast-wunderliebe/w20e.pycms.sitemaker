@@ -1,0 +1,25 @@
+<metal:define-macro define-macro="master"
+                    metal:extend-macro="main.macros['master']">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xml:lang="en"
+      i18n:domain="w20e"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      >
+
+  <head/>
+
+  <body metal:fill-slot="body">
+
+    <!-- create your own html skin here -->
+    <blink>Blinking elements are sooooo last century!</blink>
+
+    Go to the <a href="./admin">admin interface</a> to start creating
+    content. Or you could even read the manual...
+
+    <metal:define-slot define-slot="content"/>
+
+  </body>
+</html>
+
+</metal:define-macro>

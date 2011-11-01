@@ -1,0 +1,27 @@
+[nosetests]
+match=^test
+nocapture=1
+cover-package=${repr(project)}
+with-coverage=1
+cover-erase=1
+
+[compile_catalog]
+directory = w20e/site/locale
+domain = ${repr(project)}
+statistics = true
+
+[extract_messages]
+add_comments = TRANSLATORS:
+output_file = w20e/site/locale/riant.pot
+width = 80
+
+[init_catalog]
+domain = w20e
+input_file = w20e/site/locale/w20e.pot
+output_dir = w20e/site/locale
+
+[update_catalog]
+domain = w20e
+input_file = w20e/site/locale/w20e.pot
+output_dir = w20e/site/locale
+previous = true

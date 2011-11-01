@@ -1,0 +1,37 @@
+<configure xmlns="http://pylonshq.com/pyramid"
+           xmlns:pycms="http://w20e.com/pycms"
+>
+  <include package="pyramid_zcml" />
+  <include package="w20e.pycms"/>
+
+  <pycms:css
+     cssfile="./static/${project}.css"
+     csstarget="public"
+     />
+
+  <pycms:js
+     jsfile="./static/${project}.js"
+     jstarget="public"
+     />
+
+  <static
+     name="${project}_static"
+     path="static"
+     />
+
+  <pycms:macro
+     name="body"
+     ptfile="${project}:templates/main.pt"
+     />
+
+  <!--asset
+    to_override="w20e.pycms:static/favicon.ico"
+    override_with="${project}:static/favicon.ico"
+    /-->
+
+  <!--asset
+    to_override="w20e.pycms:templates/robots.txt"
+    override_with="${project}:templates/robots.txt"
+    /-->
+
+</configure>

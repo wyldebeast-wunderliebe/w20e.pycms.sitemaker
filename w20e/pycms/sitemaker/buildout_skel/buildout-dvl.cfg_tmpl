@@ -1,0 +1,21 @@
+[buildout]
+extends = buildout-base.cfg
+
+extensions = 
+    mr.developer
+
+sources = sources
+
+auto-checkout = 
+    w20e.pycms
+    w20e.hitman
+    w20e.forms
+
+develop =
+    ${pycms_project_path}
+
+[sources]
+w20e.pycms = git git://github.com/wyldebeast-wunderliebe/w20e.pycms.git
+w20e.hitman = git git://github.com/wyldebeast-wunderliebe/w20e.hitman.git
+w20e.forms = git git://github.com/wyldebeast-wunderliebe/w20e.forms.git
+
