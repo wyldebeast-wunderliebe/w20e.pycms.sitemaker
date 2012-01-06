@@ -28,6 +28,8 @@ pycms.bcc_addr = theotherone@yourdomain.com
 pycms.minify_css = true
 pycms.minify_js = true
 
+# Please check PyCMS README for other options
+
 [server:main]
 use = egg:Paste#http
 host = 0.0.0.0

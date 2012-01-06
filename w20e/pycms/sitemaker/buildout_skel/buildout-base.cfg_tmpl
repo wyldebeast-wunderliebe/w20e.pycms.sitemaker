@@ -1,18 +1,18 @@
 [buildout]
 
 parts = 
-      pyramid
+      pycms
 
 versions=versions
 
 [versions]
 
 
-[pyramid]
+[pycms]
 recipe = zc.recipe.egg
 eggs =
   nose
   PasteScript
   Pillow
-  repoze.catalog
+  w20e.pycms
   ${project}

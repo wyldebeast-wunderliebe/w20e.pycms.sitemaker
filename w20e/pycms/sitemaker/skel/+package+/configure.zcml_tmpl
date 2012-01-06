@@ -4,11 +4,23 @@
   <include package="pyramid_zcml" />
   <include package="w20e.pycms"/>
 
+  <!-- Sharing anyone? -->
+  <!-- include package="w20e.pycms" file="sharing.zcml"/-->
+
+  <!-- Need of search? -->
+  <!--include package="w20e.pycms" file="catalog.zcml"/-->
+
+  <!-- override specific views or other? -->
+  <!-- Create the file overrides.zcml and use the statement below -->
+  <!-- includeOverrides file="overrides.zcml" -->
+
+  <!-- include css files liks so: -->
   <pycms:css
      cssfile="./static/${project}.css"
      csstarget="public"
      />
 
+  <!-- include js files liks so: -->
   <pycms:js
      jsfile="./static/${project}.js"
      jstarget="public"

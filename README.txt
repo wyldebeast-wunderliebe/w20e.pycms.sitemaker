@@ -1,4 +1,6 @@
-This package allows you to create a skeleton app based on w20e.pycms. To create the basic application structure, install this package, and do:
+This package allows you to create a skeleton app based on
+w20e.pycms. To create the basic application structure, install this
+package, and do:
 
   # paster create -t pycms_project
 
