@@ -1,7 +1,6 @@
 import os
 
 from setuptools import setup, find_packages
-from pycmsprojecttemplate import PyCMSProjectTemplate
 here = os.path.abspath(os.path.dirname(__file__))
 
 requires = [
